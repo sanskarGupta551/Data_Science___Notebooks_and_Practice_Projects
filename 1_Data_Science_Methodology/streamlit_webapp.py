@@ -25,7 +25,16 @@ class Data_Science_Methodology():
     ## Sidebar    
     def sidebar(self):
         st.sidebar.header('Data Science Methodology') 
-    
+        st.sidebar.subheader('Visit Github repo: ')
+        st.sidebar.markdown(""" 
+                            * [Data Science Methodology: Topic & Additional Facts](https://github.com/sanskarGupta551/Data_Science___Notebooks_and_Practice_Projects/blob/main/1_Data_Science_Methodology/1_Data_Science_Methodology.ipynb)
+                            * [Data Science Methodology: Interview Questions](https://github.com/sanskarGupta551/Data_Science___Notebooks_and_Practice_Projects/blob/main/1_Data_Science_Methodology/2_Interview_Questions.ipynb)
+                            
+                            '''
+                            
+                            * [Data Science - Notebooks and Practice Projects](https://github.com/sanskarGupta551/Data_Science___Notebooks_and_Practice_Projects/tree/main)
+                            """)
+        
     
     ## Topic
     def data_science_methodology_topic(self):
