@@ -11,6 +11,7 @@ class Projects():
 
     
     ## Build Projects Page
+    ## (Contains Practice & Portfolio Projects each with their Seperate Presentation Streamlit WebApp)
     def build_projects(self):
         st.title("Data Science")
         st.header("Projects")

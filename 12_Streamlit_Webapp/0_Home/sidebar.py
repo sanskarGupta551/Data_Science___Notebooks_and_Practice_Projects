@@ -8,7 +8,8 @@ class Sidebar():
         pass 
     
     
-    ## Build Sidebar (Synced accross all pages and retains data even after closing the webapp)
+    ## Build Sidebar 
+    ## (Synced accross all pages and retains data even after closing the webapp)
     def build_sidebar(self):
         ## Bookmarking Notes/ Projects/ Tools    
         st.sidebar.title('Bookmarks')

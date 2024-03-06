@@ -10,7 +10,9 @@ class Notebooks():
         self.build_notebooks()
 
     
-    ## Build Notes Page
+    ## Build Notebooks Page
+    ## (Contains Data Science Topics explained with great Visualization and
+    ##  easy-to-read & understand Bite sized informations)
     def build_notebooks(self):
         st.title("Data Science")
         st.header("Notebooks")
