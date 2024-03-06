@@ -9,32 +9,21 @@ class Data_Science_Methodology():
     
     ## Basic Page Setup
     def build_site(self):
-        self.sidebar()
         self.selected_option = st.radio('Read:', ['Data Science Methodology: Topic',
                                                 'Data Science Methodology: Additional Facts',
                                                 'Data Science Methodology: Interview Questions'])
         
         if self.selected_option == "Data Science Methodology: Topic":
             self.data_science_methodology_topic()
+            self.notebook_links()
         elif self.selected_option == "Data Science Methodology: Additional Facts":
             self.data_science_methodology_additional_facts()
+            self.notebook_links()
         elif self.selected_option == "Data Science Methodology: Interview Questions":
             self.data_science_methodology_interview_questions()
+            self.notebook_links()
         
-    
-    ## Sidebar    
-    def sidebar(self):
-        st.sidebar.header('Data Science Methodology') 
-        st.sidebar.subheader('Visit Github repo: ')
-        st.sidebar.markdown(""" 
-                            * [Data Science Methodology: Topic & Additional Facts](https://github.com/sanskarGupta551/Data_Science___Notebooks_and_Practice_Projects/blob/main/1_Data_Science_Methodology/1_Data_Science_Methodology.ipynb)
-                            * [Data Science Methodology: Interview Questions](https://github.com/sanskarGupta551/Data_Science___Notebooks_and_Practice_Projects/blob/main/1_Data_Science_Methodology/2_Interview_Questions.ipynb)
-                            
-                            '''
-                            
-                            * [Data Science - Notebooks and Practice Projects](https://github.com/sanskarGupta551/Data_Science___Notebooks_and_Practice_Projects/tree/main)
-                            """)
-        
+
     
     ## Topic
     def data_science_methodology_topic(self):
@@ -205,7 +194,8 @@ class Data_Science_Methodology():
                     * Final Model: Continue this cycle until you have a mature, reliable model.
                     """)
         st.image("https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMSkillsNetwork-DS0103EN-Coursera/images/M3L1-deployment-to%20feedback.png", width=900) 
-      
+        st.markdown("'''")
+        
     
     ## Additional Facts
     def data_science_methodology_additional_facts(self):
@@ -241,6 +231,8 @@ class Data_Science_Methodology():
                     * During the `Feedback` stage, stakeholders and users evaluate the model and contribute feedback to assess the model’s performance. 
 
                     * The data model's value depends on its ability to iterate; that is, how successfully the data `model` incorporates `user feedback`.
+                    
+                    '''
                     """)
     
     
@@ -558,14 +550,18 @@ class Data_Science_Methodology():
 
                     * Together, they guide informed decision-making, enabling businesses to learn from the past, address issues, and optimize future strategies1.
 
-                    
+                    '''
                     """)
-        
-         
     
     
+    def notebook_links(self):
+        st.subheader('Visit Github repo: ')
+        st.markdown(""" 
+                            * [Data Science Methodology: Topic & Additional Facts](https://github.com/sanskarGupta551/Data_Science___Notebooks_and_Practice_Projects/blob/main/1_Data_Science_Methodology/1_Data_Science_Methodology.ipynb)
+                            * [Data Science Methodology: Interview Questions](https://github.com/sanskarGupta551/Data_Science___Notebooks_and_Practice_Projects/blob/main/1_Data_Science_Methodology/2_Interview_Questions.ipynb)
+                            
+                            '''
+                            
+                            * [Data Science - Notebooks and Practice Projects](https://github.com/sanskarGupta551/Data_Science___Notebooks_and_Practice_Projects/tree/main)
+                            """)
 
-
-
-
-Data_Science_Methodology()
