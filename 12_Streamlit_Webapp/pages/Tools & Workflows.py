@@ -3,16 +3,16 @@ import os
 
 
 
-class webapp():
+class Tools_and_Workflows():
     def __init__(self):
         self.sidebar()
-        self.build_home()
-        
+        self.build_tools_and_workflows()
+
     
-    ## Build Home Page
-    def build_home(self):
+    ## Build Tools & Workflows Page
+    def build_tools_and_workflows(self):
         st.title("Data Science")
-        st.header("Home")
+        st.header("Tools & Workflows")
 
 
     ## Build Sidebar (Synced accross all pages and retains data even after closing the webapp)
@@ -21,6 +21,6 @@ class webapp():
         st.sidebar.title('Notes')
         st.sidebar.title('Account')
         
+        
 
-
-webapp()
+Tools_and_Workflows()
