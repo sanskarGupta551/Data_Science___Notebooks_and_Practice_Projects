@@ -1,11 +1,12 @@
 import streamlit as st
 import os
+from sidebar import Sidebar
 
 
 
 class Projects():
     def __init__(self):
-        self.sidebar()
+        Sidebar.build_sidebar(self=self)
         self.build_projects()
 
     
@@ -14,13 +15,6 @@ class Projects():
         st.title("Data Science")
         st.header("Projects")
 
-    
-    ## Build Sidebar (Synced accross all pages and retains data even after closing the webapp)
-    def sidebar(self):
-        st.sidebar.title('Bookmarks')
-        st.sidebar.title('Notes')
-        st.sidebar.title('Account')
-        
         
 
 Projects()

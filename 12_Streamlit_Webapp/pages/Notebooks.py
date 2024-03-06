@@ -4,17 +4,17 @@ from sidebar import Sidebar
 
 
 
-class webapp():
+class Notebooks():
     def __init__(self):
         Sidebar.build_sidebar(self=self)
-        self.build_home()
-        
+        self.build_notebooks()
+
     
-    ## Build Home Page
-    def build_home(self):
+    ## Build Notes Page
+    def build_notebooks(self):
         st.title("Data Science")
-        st.header("Home")
+        st.header("Notebooks")
+        
 
 
-
-webapp()
+Notebooks()
